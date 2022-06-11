@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Heat-Check</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="app-title">Weather Dashboard</h1>
+    </header>
+    
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <form id="user-form" class="card-body">
+            <h3 class="card-header text-uppercase">Search for a City</h3>
+              <label class="form-label" for="city">City</label>
+              <input type="text" name="city" id="city" autofocus="true" class="form-input" />
+              <button type="submit" id="submitBtn" class="btn">Get City</button>
+            </form>
+          </div>
+          <div>
+            <h4>History:</h4>
+            <div id="search-history"></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">5 day forecast:<span id=""></span></h2>
+            <div id="weather-container" class="list-group"></div>
+          </div>
+        </main>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" integrity="sha512-x/vqovXY/Q4b+rNjgiheBsA/vbWA3IVvsS8lkQSX1gQ4ggSJx38oI2vREZXpTzhAv6tNUaX81E7QBBzkpDQayA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js" integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
