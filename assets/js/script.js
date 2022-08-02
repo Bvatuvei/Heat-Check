@@ -20,7 +20,7 @@ var currentWeather = function (cityInput) {
   }
 
   var getCity =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
     cityInput +
     "&limit=" +
     searchLimit +
@@ -86,7 +86,7 @@ var display5DayForecast = function (forecast) {
     paragraphMax.innerText = "max: " + forecast[i].temp.max + " F";
     DayEl.setAttribute("class", "border-black");
     var iconEl = document.createElement('img');
-    iconEl.setAttribute('src', 'http://openweathermap.org/img/wn/' + forecast[i].weather[0].icon + '.png');
+    iconEl.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecast[i].weather[0].icon + '.png');
     DayEl.appendChild(iconEl);
     var uviEl = document.createElement('p');
     DayEl.appendChild(uviEl);
