@@ -122,4 +122,5 @@ var displayHistory = function () {
   }
 };
 
+
 displayHistory();
